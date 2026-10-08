@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Workplace Productivity Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AI Productivity Assistant</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#responsible-ai">Responsible AI</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                AI Skills Acceleration Project
+            </div>
+
+            <h1>
+                AI-Powered Workplace
+                <span>Productivity Assistant</span>
+            </h1>
+
+            <p>
+                An intelligent workplace assistant designed to help
+                employees write emails, summarise meetings, plan tasks,
+                conduct research and get workplace assistance.
+            </p>
+
+            <a href="#features" class="primary-button">
+                Explore Assistant
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">PRODUCTIVITY TOOLS</p>
+
+            <h2>
+                Work smarter with AI
+            </h2>
+
+            <p>
+                Select a productivity tool below and enter your request.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <!-- Email -->
+            <div class="feature-card">
+
+                <div class="icon">✉️</div>
+
+                <h3>Email Generator</h3>
+
+                <p>
+                    Generate professional workplace emails quickly.
+                </p>
+
+                <button onclick="selectTool('email')">
+                    Use Email Assistant
+                </button>
+
+            </div>
+
+
+            <!-- Meeting -->
+            <div class="feature-card">
+
+                <div class="icon">📝</div>
+
+                <h3>Meeting Summariser</h3>
+
+                <p>
+                    Turn meeting notes into structured summaries.
+                </p>
+
+                <button onclick="selectTool('meeting')">
+                    Summarise Meeting
+                </button>
+
+            </div>
+
+
+            <!-- Tasks -->
+            <div class="feature-card">
+
+                <div class="icon">✅</div>
+
+                <h3>Task Planner</h3>
+
+                <p>
+                    Turn workplace goals into actionable tasks.
+                </p>
+
+                <button onclick="selectTool('tasks')">
+                    Plan Tasks
+                </button>
+
+            </div>
+
+
+            <!-- Research -->
+            <div class="feature-card">
+
+                <div class="icon">🔎</div>
+
+                <h3>Research Assistant</h3>
+
+                <p>
+                    Create structured research briefs and insights.
+                </p>
+
+                <button onclick="selectTool('research')">
+                    Start Research
+                </button>
+
+            </div>
+
+
+            <!-- Chat -->
+            <div class="feature-card">
+
+                <div class="icon">💬</div>
+
+                <h3>Workplace Chat</h3>
+
+                <p>
+                    Ask questions and receive workplace assistance.
+                </p>
+
+                <button onclick="selectTool('chat')">
+                    Start Chat
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI Workspace -->
+    <section class="workspace-section">
+
+        <div class="workspace">
+
+            <div class="workspace-header">
+
+                <div>
+                    <p class="small-title">AI WORKSPACE</p>
+
+                    <h2 id="toolTitle">
+                        Select a productivity tool
+                    </h2>
+                </div>
+
+                <div class="ai-status">
+                    ● AI Assistant Ready
+                </div>
+
+            </div>
+
+
+            <label for="userInput">
+                Your request
+            </label>
+
+            <textarea
+                id="userInput"
+                placeholder="Select a tool above and enter your request..."
+            ></textarea>
+
+
+            <button
+                class="generate-button"
+                onclick="generateResponse()"
+            >
+                Generate AI Response
+            </button>
+
+
+            <div class="response-container">
+
+                <h3>AI Response</h3>
+
+                <div id="response">
+                    Your AI-generated response will appear here.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <p class="small-title">ABOUT THE PROJECT</p>
+
+            <h2>
+                Helping employees work smarter
+            </h2>
+
+            <p>
+                The AI Workplace Productivity Assistant was developed
+                to demonstrate how artificial intelligence and prompt
+                engineering can be applied to everyday workplace tasks.
+            </p>
+
+            <p>
+                The solution focuses on reducing repetitive work while
+                keeping humans responsible for reviewing and approving
+                AI-generated information.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Responsible AI -->
+    <section id="responsible-ai" class="responsible-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">RESPONSIBLE AI</p>
+
+            <h2>
+                AI should assist people, not replace judgement
+            </h2>
+
+        </div>
+
+
+        <div class="responsible-grid">
+
+            <div>
+                <h3>🔐 Privacy</h3>
+                <p>
+                    Users should avoid entering confidential or sensitive
+                    workplace information into AI systems.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>✓ Human Review</h3>
+                <p>
+                    AI-generated content should be reviewed by a person
+                    before important decisions or communications.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>⚖️ Bias & Accuracy</h3>
+                <p>
+                    AI can produce inaccurate or biased information.
+                    Important information should therefore be verified.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>🧠 Human Oversight</h3>
+                <p>
+                    The assistant supports workplace productivity but
+                    does not replace human responsibility or judgement.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>AI Workplace Productivity Assistant</h3>
+
+        <p>
+            AI Skills Acceleration Programme
+        </p>
+
+        <p>
+            Developed as an AI productivity project.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
